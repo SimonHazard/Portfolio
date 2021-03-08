@@ -1,26 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './images/logo.png';
+import { tsParticles } from "tsparticles";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+// function App() {
+//   return (
+//   );
+// }
+
+tsParticles
+  .loadJSON("tsparticles", "presets/default.json")
+  .then((container) => {
+    console.log("callback - tsparticles config loaded");
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+
+  tsParticles.load("tsparticles", {
+    /* options here */
+  });
+
+
+class App extends React.Component {
+  
+  public render() {
+    return(
+      <div className="App" id="tsparticles">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div>
+          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo-reverse" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
+          </div>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Projet en construction 💫💫💫
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/SimonHazard"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Github
         </a>
       </header>
     </div>
-  );
+    )
+  }
 }
 
 export default App;
