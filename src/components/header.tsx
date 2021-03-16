@@ -3,6 +3,14 @@ import styled from 'styled-components';
 
 const NavBar = styled.nav`
     display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    background-color: rgb(18, 18, 18);
+    padding: 0.7rem 2rem;
+    overflow: hidden;
+    z-index: 1;
+    margin: auto;
 `;
 
 const Row = styled.ul`
@@ -11,7 +19,7 @@ const Row = styled.ul`
     list-style-type: none;
 `;
 
-const Name = styled.h1`
+const Name = styled.h2`
     display: flex;
     flex: auto;
     list-style-type: none;
@@ -41,9 +49,6 @@ const Header = () => {
                 </li>
                 <li>
                     <Navig>Compétences</Navig>
-                </li>
-                <li>
-                    <Navig>Expériences</Navig>
                 </li>
                 <li>
                     <Navig>Contact</Navig>

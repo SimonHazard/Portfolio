@@ -3,40 +3,37 @@ import Header from './components/header';
 import About from './components/about';
 import styled from "styled-components";
 import Skills from './components/skills';
-import Particles from "react-tsparticles";
-
-// function App() {
-//   return (
-//   );
-// }
+// import Particles from "react-tsparticles";
+import Contact from './components/contact';
+import Project from './components/project';
+import Styling from './components/styling';
 
 const AppContainer = styled.body`
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2.5rem;
 `;
 
 class App extends React.Component {
-  constructor(props: any) {
-    super(props);
+  // constructor(props: any) {
+  //   super(props);
 
-    this.particlesInit = this.particlesInit.bind(this);
-    this.particlesLoaded = this.particlesLoaded.bind(this);
-  }
+  //   this.particlesInit = this.particlesInit.bind(this);
+  //   this.particlesLoaded = this.particlesLoaded.bind(this);
+  // }
 
-  particlesInit(main: any) {
-    console.log(main);
-  }
+  // particlesInit(main: any) {
+  //   console.log(main);
+  // }
 
-  particlesLoaded(container: any) {
-    console.log(container);
-  }
+  // particlesLoaded(container: any) {
+  //   console.log(container);
+  // }
   
   public render() {
     return(
       <div id="root">
-        <div><Particles
+        {/* <div><Particles
         id="tsparticles"
         init={this.particlesInit}
         loaded={this.particlesLoaded}
@@ -49,10 +46,10 @@ class App extends React.Component {
           fpsLimit: 60,
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#A9A9A9",
             },
             links: {
-              color: "#ffffff",
+              color: "#A9A9A9",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -77,7 +74,7 @@ class App extends React.Component {
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
             },
             shape: {
               type: "circle",
@@ -89,11 +86,14 @@ class App extends React.Component {
           },
           detectRetina: true,
         }}
-      /></div>
+      /></div> */}
       <AppContainer>
         <Header/>
+        <Styling/>
         <About/>
+        <Project/>
         <Skills/>
+        <Contact/>
       </AppContainer>
       </div>
     )
