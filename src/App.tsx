@@ -3,7 +3,7 @@ import Header from './components/header';
 import About from './components/about';
 import styled from "styled-components";
 import Skills from './components/skills';
-// import Project from './components/project';
+import Project from './components/project';
 import Styling from './components/styling';
 import Footer from './components/footer';
 import Contact from './components/contact';
@@ -26,7 +26,7 @@ class App extends React.Component {
         <Header/>
         <Styling/>
         <About/>
-        {/* <Project/> */}
+        <Project/>
         <Skills/>
         <Contact/>
         <Footer/>

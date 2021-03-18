@@ -40,10 +40,9 @@ const Navig = styled.a`
 
 const Header = () => {
     return(
-        <NavBar>
+        <NavBar className="navbar">
             <Name>Simon HAZARD</Name>
-            <Row>
-                
+            <Row className="menu">                
                 <li>
                     <Navig href="#">A propos</Navig>
                 </li>
