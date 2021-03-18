@@ -6,8 +6,8 @@ const NavBar = styled.nav`
     position: sticky;
     top: 0;
     justify-content: space-around;
-    background-color: rgb(18, 18, 18);
-    padding: 0.7rem 2rem;
+    background-color: #1B3A4B;
+    padding: 0 15%;
     overflow: hidden;
     z-index: 1;
     margin: auto;
@@ -17,6 +17,9 @@ const Row = styled.ul`
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    @media (max-width: 768px){
+        flex-wrap: wrap;
+    }
 `;
 
 const Name = styled.h2`
@@ -25,14 +28,13 @@ const Name = styled.h2`
     list-style-type: none;
 `;
 
-const Navig = styled.span`
+const Navig = styled.a`
     border-radius: .5rem;
     padding: 10px;
+    text-decoration: none;
+    color: #ffffffde;;
     &:hover {
-        background-color: grey;
-    }
-    &:focus {
-        background-color: grey;
+        background-color: #065A60;
     }
 `;
 
@@ -41,17 +43,18 @@ const Header = () => {
         <NavBar>
             <Name>Simon HAZARD</Name>
             <Row>
+                
                 <li>
-                    <Navig>A propos</Navig>
+                    <Navig href="#">A propos</Navig>
                 </li>
                 <li>
-                    <Navig>Projets</Navig>
+                    <Navig href="#">Projets</Navig>
                 </li>
                 <li>
-                    <Navig>Compétences</Navig>
+                    <Navig href="#">Compétences</Navig>
                 </li>
                 <li>
-                    <Navig>Contact</Navig>
+                    <Navig href="#">Contact</Navig>
                 </li>
             </Row>
         </NavBar>

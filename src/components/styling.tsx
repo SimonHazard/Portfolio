@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
 const Styling = () => {
     return(
         <StyledDiv id="styling">
-            <img src={logo} alt='' width="50%" height="50%"></img>
+            <img src={logo} alt='' width="30%" height="30%"></img>
         </StyledDiv>
     );
 };

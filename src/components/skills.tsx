@@ -12,7 +12,7 @@ import emotion from '../images/emotion.png'
 
 
 const SectionStyled = styled.section`
-
+    padding: 0 15%;
 `;
 
 const Column = styled.div`
@@ -24,6 +24,9 @@ const Column = styled.div`
 const Row = styled.div`
     display: flex;
     justify-content: space-around;
+    @media (max-width: 768px){
+        flex-wrap: wrap;
+    }
 `;
 
 const Skills = () => {
